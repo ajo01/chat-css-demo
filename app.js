@@ -1,22 +1,10 @@
 
+var username = ""
+
 window.onload = function () {
 
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
 
     document.getElementById('submit-btn').onclick = function () {
-
+        username = document.getElementById('username-btn');
     }
 }
